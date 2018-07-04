@@ -1,6 +1,6 @@
 package com.oleksii.pchelintsev.exception;
 
-public class MyZeroException extends Exception{
+public class MyZeroException extends ArithmeticException{
 	
 	public MyZeroException() {
         super();

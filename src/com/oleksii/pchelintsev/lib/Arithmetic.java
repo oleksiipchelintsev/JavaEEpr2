@@ -4,11 +4,12 @@ import com.oleksii.pchelintsev.exception.MyZeroException;
 
 public class Arithmetic {
 	public int divide(int a, int b) {
+			Integer result = null; 
 			try {
-				throw new MyZeroException("Division by zero");
-			} catch (MyZeroException e) {
-				e.printStackTrace();
-			}
-		return a/b;
+				result = a/b;
+		   } catch (MyZeroException e) {
+		    e.printStackTrace();
+		   }
+		return result;
 	}
 }
