@@ -24,11 +24,7 @@ class ArithmeticTest {
 	void testDivideUsual() {
 		int a = 100;
 		int b = 5;
-		try {
-			Assert.assertEquals(20,(int)new Arithmetic().divide(a, b));
-		} catch (MyZeroException e) {
-			e.printStackTrace();
-		}
+		Assert.assertEquals(20,(int)new Arithmetic().divide(a, b));
 		System.out.println("a = 100,  b = 5, Test is successful!");
 	}
 	
@@ -36,11 +32,7 @@ class ArithmeticTest {
 	void testDivideNegativeNum() {
 		int a = 100;
 		int b = -5;
-		try {
-			Assert.assertEquals(-20,(int)new Arithmetic().divide(a, b));
-		} catch (MyZeroException e) {
-			e.printStackTrace();
-		}
+		Assert.assertEquals(-20,(int)new Arithmetic().divide(a, b));
 		System.out.println("a = 100,  b = -5, Test is successful!");
 	}
 }

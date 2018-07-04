@@ -31,11 +31,8 @@ public class Main {
 		
 	Arithmetic arithmetic = new Arithmetic();
 	double a = 0;
-	try {
-		a = arithmetic.divide(400, 0);
-	} catch (MyZeroException e) {
-		e.printStackTrace();
-	}
+
+	a = arithmetic.divide(400, 0);
 	logger.info(String.valueOf(a));
 	}
 }
